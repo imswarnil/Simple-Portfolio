@@ -1,0 +1,24 @@
+<section class="section portfolio" id="portfolio">
+    <div class="container">
+      <p class="section-subtitle">Portfolio</p>
+      <h2 class="h2 section-title">My Amazing Works</h2>
+      <p class="section-text">Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehen derit in voluptate</p>
+
+      <ul class="portfolio-list">
+        {% for project in site.portfolio %}
+          <li>
+            <a href="{{ project.link }}" class="portfolio-card" style="background-image: url('{{ project.image }}')">
+              <div class="card-content">
+                <p class="card-subtitle">{{ project.subtitle }}</p>
+                <h3 class="h3 card-title">{{ project.title }}</h3>
+                <span class="btn-link">
+                  <span>View Project</span>
+                  <ion-icon name="arrow-forward"></ion-icon>
+                </span>
+              </div>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>

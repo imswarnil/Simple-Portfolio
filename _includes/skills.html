@@ -1,0 +1,22 @@
+<section class="section skills" id="skills">
+    <div class="container">
+      <p class="section-subtitle">My Skills</p>
+      <h2 class="h2 section-title">I Develop Skills Regularly</h2>
+      <p class="section-text">Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehen derit in voluptate</p>
+
+      <ul class="skills-list">
+        {% for skill in site.skills %}
+          <li class="skills-item">
+            <div class="wrapper" style="width: {{ skill.value }}%">
+              <h3 class="skills-title">{{ skill.name }}</h3>
+              <data class="skills-data" value="{{ skill.value }}">{{ skill.value }}%</data>
+            </div>
+            <div class="skills-progress-box">
+              <div class="skills-progress" style="width: {{ skill.value }}%"></div>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+
+    </div>
+  </section>

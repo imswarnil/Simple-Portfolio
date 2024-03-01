@@ -1,0 +1,128 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta name="keywords" content="{{ page.keywords | default: site.keywords }}">
+  <meta name="author" content="{{ site.author }}">
+  <title>{{ page.title | default: site.title }}</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.svg" type="image/svg+xml">
+
+  <!-- Custom CSS link -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+
+  <!-- Google Font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Ionicons link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body id="top">
+
+  <!-- HEADER -->
+  {% include header.html %}
+
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <article>
+
+      <!-- HERO SECTION -->
+      <section class="hero" id="home">
+        <div class="container">
+          <!-- Add your hero content here -->
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section class="section about" id="about">
+        <div class="container">
+          <!-- Add your about content here -->
+        </div>
+      </section>
+
+      <!-- PORTFOLIO SECTION -->
+      <section class="section portfolio" id="portfolio">
+        <div class="container">
+
+          <p class="section-subtitle">Portfolio</p>
+          <h2 class="h2 section-title">My Amazing Works</h2>
+          <p class="section-text">Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehen derit in voluptate</p>
+
+          <ul class="portfolio-list">
+            {% for project in site.portfolio %}
+              <li>
+                <a href="{{ project.link }}" class="portfolio-card" style="background-image: url('{{ project.image }}')">
+                  <div class="card-content">
+                    <p class="card-subtitle">{{ project.subtitle }}</p>
+                    <h3 class="h3 card-title">{{ project.title }}</h3>
+                    <span class="btn-link">
+                      <span>View Project</span>
+                      <ion-icon name="arrow-forward"></ion-icon>
+                    </span>
+                  </div>
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- SKILLS SECTION -->
+      <secti    on class="section skills" id="skills">
+        <div class="container">
+
+          <p class="section-subtitle">My Skills</p>
+          <h2 class="h2 section-title">I Develop Skills Regularly</h2>
+          <p class="section-text">Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehen derit in voluptate</p>
+
+          <ul class="skills-list">
+            {% for skill in site.skills %}
+              <li class="skills-item">
+                <div class="wrapper" style="width: {{ skill.value }}%">
+                  <h3 class="skills-title">{{ skill.name }}</h3>
+                  <data class="skills-data" value="{{ skill.value }}">{{ skill.value }}%</data>
+                </div>
+                <div class="skills-progress-box">
+                  <div class="skills-progress" style="width: {{ skill.value }}%"></div>
+                </div>
+              </li>
+            {% endfor %}
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- Add more sections as needed -->
+
+    </article>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <!-- Add your footer content here -->
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <a href="#top" class="back-to-top" data-back-to-top>BACK TOP</a>
+
+  <!-- Custom JS link -->
+  <script src="{{ site.baseurl }}/assets/js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!-- _includes/about-section.html -->
+
+<section class="section about" id="about">
+    <div class="container">
+  
+      <figure class="about-banner">
+  
+        <img src="{{ site.baseurl }}/assets/images/{{ site.about.banner_image }}" width="800" height="652" loading="lazy" alt="{{ site.about.banner_alt }}" class="img-cover">
+  
+        <img src="{{ site.baseurl }}/assets/images/{{ site.about.absolute_image }}" width="800" height="717" loading="lazy" alt="{{ site.about.absolute_alt }}" class="abs-img">
+  
+        {% for icon in site.about.icons %}
+          <div class="abs-icon abs-icon-{{ forloop.index }}">
+            <ion-icon name="{{ icon.name }}" role="img" class="md hydrated" aria-label="{{ icon.label }}"></ion-icon>
+          </div>
+        {% endfor %}
+  
+      </figure>
+  
+      <div class="about-content">
+  
+        <p class="section-subtitle">{{ site.about.subtitle }}</p>
+  
+        <h2 class="h2 section-title">{{ site.about.title }}</h2>
+  
+        <p class="section-text">
+          {{ site.about.text1 }}
+        </p>
+  
+        <p class="section-text">
+          {{ site.about.text2 }}
+        </p>
+  
+        <a href="{{ site.about.portfolio_link }}" class="btn btn-primary blue">{{ site.about.portfolio_button }}</a>
+  
+      </div>
+  
+    </div>
+  </section>
+  

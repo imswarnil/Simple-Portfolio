@@ -1,0 +1,109 @@
+title: "Your Awesome Title"
+author: "Your Name"
+email: "your-email@example.com"
+description: "Write an awesome description for your new site here. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+year: 2024
+keywords: "web development, design, Jekyll"
+
+# Menu Items
+menu:
+  - title: "Home"
+    url: "/"
+  - title: "About"
+    url: "#about"
+  - title: "Portfolio"
+    url: "#portfolio"
+  - title: "Skills"
+    url: "#skills"
+  - title: "Contact"
+    url: "#contact"
+  - title: "Blog"
+    url: "#blog"
+  - title: "Download CV"
+    url: "#"
+
+
+# Hero Section
+hero:
+  name: "Ethan Ward"
+  profession: "Web Developer from New York"
+  description: "Adipisicing elit. Neque nulla voluptatum eos repellat deserunt nesciunt tempore porro totam."
+  years_of_success: 12
+  projects_completed: 800+
+  cta_primary: "Get a Quote"
+  cta_secondary: "About Me"
+
+about:
+  banner_image: about-banner.jpg
+  banner_alt: Ethan's Photo
+  absolute_image: absolute-image.jpg
+  absolute_alt: Ethan's Photo
+  icons:
+    - name: logo-css3
+      label: logo css3
+    - name: logo-javascript
+      label: logo javascript
+    - name: logo-angular
+      label: logo angular
+  subtitle: "I'm a Developer"
+  title: "I Develop Applications that Help People"
+  text1: "Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu epteur sint occaecat cupidatat"
+  text2: "Krnon proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis"
+  portfolio_link: "#portfolio"
+  portfolio_button: "View Portfolio"
+
+# Social Media Links
+social:
+  twitter: "your-twitter-handle"
+  facebook: "your-facebook-page"
+  linkedin: "your-linkedin-profile"
+  instagram: "your-instagram-handle"
+
+# Skills
+skills:
+  - name: "CSS"
+    value: 95
+  - name: "React"
+    value: 75
+  - name: "MongoDB"
+    value: 90
+  - name: "Python"
+    value: 70
+  - name: "PHP"
+    value: 80
+  - name: "JavaScript"
+    value: 75
+
+# Portfolio Projects
+portfolio:
+  - title: "Web Application for Desiverse"
+    subtitle: "Youtube"
+    image: "/assets/images/portfolio-1.jpg"
+    link: "#"
+  - title: "Web Application for Desiverse"
+    subtitle: "Vimeo"
+    image: "/assets/images/portfolio-2.jpg"
+    link: "#"
+  - title: "Web Application for Desiverse"
+    subtitle: "Soundcloud"
+    image: "/assets/images/portfolio-3.jpg"
+    link: "#"
+  - title: "Web Application for Desiverse"
+    subtitle: "Details"
+    image: "/assets/images/portfolio-4.jpg"
+    link: "#"
+
+
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
