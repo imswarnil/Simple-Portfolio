@@ -1,7 +1,7 @@
-title: "Your Awesome Title"
-author: "Your Name"
+title: "Prachi Portfolio"
+author: "Prachi Jain"
 email: "your-email@example.com"
-description: "Write an awesome description for your new site here. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+description: "Passionate about crafting dynamic and user-centric web experiences. Currently specializing in JavaScript and React development to build innovative and efficient solutions. Bringing the power of technology to the vibrant city of Ahmedabad, India."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 year: 2024
@@ -27,19 +27,19 @@ menu:
 
 # Hero Section
 hero:
-  name: "Ethan Ward"
-  profession: "Web Developer from New York"
-  description: "Adipisicing elit. Neque nulla voluptatum eos repellat deserunt nesciunt tempore porro totam."
-  years_of_success: 12
-  projects_completed: 800+
-  cta_primary: "Get a Quote"
+  name: "Prachi Jain"
+  profession: "JS Developer from India"
+  description: "Passionate about crafting dynamic and user-centric web experiences. Currently specializing in JavaScript and React development to build innovative and efficient solutions. Bringing the power of technology to the vibrant city of Ahmedabad, India."
+  years_of_success: 6
+  projects_completed: 8+
+  cta_primary: "Hire Me"
   cta_secondary: "About Me"
 
 about:
-  banner_image: about-banner.jpg
-  banner_alt: Ethan's Photo
-  absolute_image: absolute-image.jpg
-  absolute_alt: Ethan's Photo
+  banner_image: about-banner.png
+  banner_alt: Prachi's Photo
+  absolute_image: absolute-image.png
+  absolute_alt: Prachi Photo
   icons:
     - name: logo-css3
       label: logo css3
@@ -47,10 +47,10 @@ about:
       label: logo javascript
     - name: logo-angular
       label: logo angular
-  subtitle: "I'm a Developer"
-  title: "I Develop Applications that Help People"
-  text1: "Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu epteur sint occaecat cupidatat"
-  text2: "Krnon proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis"
+  subtitle: "I'm a Javascript Developer"
+  title: "I Develop Applications Using JS & React that Help People"
+  text1: "Hi there! I'm Your Full Name, a passionate web developer from Ahmedabad, India. With over 5 years of experience in JavaScript and React, I've successfully delivered 30+ innovative projects,"
+  text2: "contributing to the city's digital landscape. Let's work together to enhance your digital presence and bring your ideas to life"
   portfolio_link: "#portfolio"
   portfolio_button: "View Portfolio"
 
@@ -71,16 +71,16 @@ skills:
     value: 90
   - name: "Python"
     value: 70
-  - name: "PHP"
+  - name: "SQL"
     value: 80
   - name: "JavaScript"
     value: 75
 
 # Portfolio Projects
 portfolio:
-  - title: "Web Application for Desiverse"
-    subtitle: "Youtube"
-    image: "/assets/images/portfolio-1.jpg"
+  - title: "Amantrika "
+    subtitle: "E Invite Cards"
+    image: "/assets/images/one.png"
     link: "#"
   - title: "Web Application for Desiverse"
     subtitle: "Vimeo"
